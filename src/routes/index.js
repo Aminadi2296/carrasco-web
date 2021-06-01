@@ -8,11 +8,12 @@ router.post('/send-email', async(req, res)=>{
     const {email, message, name, phone, service} = req.body;
     contentHTML = `
         <h1>Enviado desde Web Site</h1>
-        <h3>De: ${name}, Email: ${email}</h3>
-        <br />
+        <h3><b>De: ${ name }, Email: ${ email }</b></h3>
         <h3>Numero de telefono: ${phone}</h3>
         <h2>Servicio Solicitado ${service}</h2>
-        <b>MENSAJE: ${message}</b>
+        <br />
+        <b>MENSAJE:</b>
+        <p>${message}</p>
     `
     
         let transporter = nodemailer.createTransport({

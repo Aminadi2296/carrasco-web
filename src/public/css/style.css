@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin:0;
-<<<<<<< HEAD
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
 
@@ -19,7 +18,7 @@
 }
 
 
-/*HEADER*/
+    /*HEADER*/
 
 .first-header{
     height: 4em;
@@ -92,7 +91,7 @@
     top: 33em;
     bottom: 93.34%;
 }
-/*SECOND SECTION*/
+    /*SECOND SECTION*/
 
 .second{
     height: 90em;
@@ -116,8 +115,6 @@
     width: 53em;
     background: gray;
     margin-bottom: -7.5em;
-}
-=======
 }
 
     /* section SEND EMAIL */
@@ -175,4 +172,3 @@
     padding: .9em;
     
 }
->>>>>>> 456d46b49b428370eea7e127b3b1349d824b831a
