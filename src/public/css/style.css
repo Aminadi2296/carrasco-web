@@ -8,13 +8,14 @@
 
 .wrapper{
     padding: 0 13em;
-    border: 10px solid rgb(187, 255, 0);
+    /* border: 10px solid rgb(187, 255, 0); */
     
 }
 
 .first-section{
     height: 50em;
     background: rgb(116, 102, 102);
+    margin-top: -8em;
 }
 
 
@@ -23,7 +24,7 @@
 .first-header{
     height: 4em;
     width:75em; 
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +32,7 @@
 .hours{
     width: 13em;
     height: 2.5em;
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
     
 }
 .hours p{
@@ -40,7 +41,7 @@
 .call-us{
     width: 13em;
     height: 2.5em;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .call-us p{
@@ -50,30 +51,36 @@
     width: 13em;
     height: 2.5em;
 }
-
-.sticky-header{
-    height: 4em;
-    width:75em; 
-    border: 3px solid red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
+nav{
     position: sticky;
     top: 0;
 }
 
-.sticky-header nav{
-    border: 3px solid rgb(0, 109, 128);
+.sticky-header{
+    height: 4em;
+    width:100%; 
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    top: 0px;
+    position: sticky;
 }
 
-.sticky-header nav li{
+.sticky-header a{
+    /* border: 3px solid rgb(0, 109, 128); */
+    text-decoration: none;
+    color: black;
+}
+
+.sticky-header ul li{
     display: inline;
     margin: 0 1.2em;
 }
 
 .icons{
-    border: 3px solid rgb(0, 109, 128);
+    /* border: 3px solid rgb(0, 109, 128); */
 }
 
 .first-section-par{
@@ -123,6 +130,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     height: 400px;
+    padding: 4em;
 }
 
 .form-send{
