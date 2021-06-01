@@ -23,23 +23,37 @@
 
 .first-header{
     height: 4em;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width:100%; 
+>>>>>>> e2780fed4227647277b85eea50b4d5ea59ee98f9
     /* border: 3px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+<<<<<<< HEAD
 .hours{
     
+=======
+.first-header .hours{
+    width: 13em;
+>>>>>>> e2780fed4227647277b85eea50b4d5ea59ee98f9
     height: 2.5em;
     /* border: 3px solid greenyellow; */
     
 }
-.hours p{
+.first-header .hours p{
     font-size: .8em;
 }
+<<<<<<< HEAD
 .call-us{
     
+=======
+.first-header .call-us{
+    width: 13em;
+>>>>>>> e2780fed4227647277b85eea50b4d5ea59ee98f9
     height: 2.5em;
     /* border: 3px solid blue; */
 }
