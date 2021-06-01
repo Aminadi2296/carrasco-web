@@ -23,14 +23,14 @@
 
 .first-header{
     height: 4em;
-    width:75em; 
+    width: 100%;
     /* border: 3px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .hours{
-    width: 13em;
+    
     height: 2.5em;
     /* border: 3px solid greenyellow; */
     
@@ -39,7 +39,7 @@
     font-size: .8em;
 }
 .call-us{
-    width: 13em;
+    
     height: 2.5em;
     /* border: 3px solid blue; */
 }
@@ -48,7 +48,7 @@
     font-size: .8em;
 }
 .btn{
-    width: 13em;
+    
     height: 2.5em;
 }
 nav{
@@ -79,9 +79,7 @@ nav{
     margin: 0 1.2em;
 }
 
-.icons{
-    /* border: 3px solid rgb(0, 109, 128); */
-}
+
 
 .first-section-par{
     position: absolute;
