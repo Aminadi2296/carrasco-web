@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin:0;
+<<<<<<< HEAD
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
 
@@ -116,3 +117,62 @@
     background: gray;
     margin-bottom: -7.5em;
 }
+=======
+}
+
+    /* section SEND EMAIL */
+
+.mail{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 400px;
+}
+
+.form-send{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-send .input{
+    width: calc(200px - 1.2em);
+    height: 40px;
+    margin: 5px;
+    border:none;
+    background: #F5F5F5;
+    padding: 0 1.2em;
+}
+.form-send #text{
+    width: calc(400px + 1.2em);
+    height: 200px;
+    margin: 5px;
+    padding: 1.2em;
+    border:none;
+    background: #F5F5F5;
+}
+
+.actions-form{
+    width: auto;
+    text-align: end;
+}
+.send-button:hover{
+    cursor: pointer;
+}
+
+.send-button{
+    height: 40px;
+    margin: 5px;
+    border:none;
+    background: #4B4B4B;
+    color: white;
+    padding: 0 0 0 1.2em;
+}
+
+.send-button span{
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: .9em;
+    
+}
+>>>>>>> 456d46b49b428370eea7e127b3b1349d824b831a
