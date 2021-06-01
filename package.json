@@ -1,0 +1,19 @@
+{
+  "name": "carrasco-web",
+  "version": "1.0.0",
+  "description": "Grupo Carrasco - Constructora y contratista",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aminadi2296/carrasco-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aminadi2296/carrasco-web/issues"
+  },
+  "homepage": "https://github.com/Aminadi2296/carrasco-web#readme"
+}
