@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin:0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 
 }
@@ -90,6 +90,7 @@ nav{
     left: 210px;
     top: 280px;
     font-size: 3.5em;
+    font-weight: 900;
 }
 .second-button{
     position: absolute;
@@ -133,6 +134,10 @@ nav{
     padding: 4em;
 }
 
+.form{
+    margin-top: 1.2em;
+}
+
 .form-send{
     display: grid;
     justify-content: center;
@@ -164,5 +169,23 @@ nav{
     cursor: pointer;
 }
 
+.mail-information{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    padding: 4em;
+}
 
+.mail-information .number-k{
+    font-size: 10em;
+}
+
+.mail-information p{
+    font-size: 1.3em;
+}
+
+.mail-title{
+    font-size: 2.2em;
+}
 
