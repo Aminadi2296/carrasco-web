@@ -152,23 +152,9 @@
     width: auto;
     text-align: end;
 }
-.send-button:hover{
+.btn:hover{
     cursor: pointer;
 }
 
-.send-button{
-    height: 40px;
-    margin: 5px;
-    border:none;
-    background: #4B4B4B;
-    color: white;
-    padding: 0 0 0 1.2em;
-}
 
-.send-button span{
-    background-color: black;
-    color: white;
-    height: 40px;
-    padding: .9em;
-    
-}
+
