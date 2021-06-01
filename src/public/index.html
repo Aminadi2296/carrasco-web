@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrasco Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <h1>Hola Mundo</h1>
+    <section class="mail">
+        <div class="form-send">
+            <h2>Make an appointment</h2>
+            <form action="send-email" method="post">
+                <div>
+                    <input type="name" name="name" class="input" id="name" placeholder="Nombre">
+                    <input type="email" name="email" class="input" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="tel" name="phone" class="input" id="phone" placeholder="Teléfono">
+                    <input type="on" name="service" class="input" id="service" placeholder="servicio">
+                </div>
+                <textarea name="message" id="text" cols="30" rows="10" placeholder="Dinos acerca de los servicios que solicitas" ></textarea>
+                <br>
+                <div class="actions-form">
+                    <button type="submit" class="send-button">ENVIAR SOLICITUD <span> ></span></button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h3>Maxime placeat facere <br /> possimus omnis</h3>
+            <h2 class="number-k">8k</h2>
+            <p>costumers served (and counting)</p>
+        </div>
+    </section>
 </body>
 </html>
