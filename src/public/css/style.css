@@ -377,3 +377,61 @@ nav{
     border: none;
     margin-right: .5em;
 }
+
+
+
+
+/* FOOTER */
+footer{
+   
+    width: 100%;
+}
+
+.footer-wrapper{
+    padding: 3em 13em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-left{
+    background: red;
+}
+.footer-center{
+    background: yellow;
+    
+}
+.footer-right{
+    background: blue;
+  
+}
+
+
+.right-container{
+    display: inline-flex;
+    align-items: center;
+    padding: 1.5em 0;
+    
+}
+.right-container img{
+    height: 2em;
+    width: 2em;
+}
+.contact-par{
+    font-size: .8em;
+    width: 60%;
+}
+
+.bottom-section{
+    grid-column: 1/4;
+    height: 3em;
+    width: 100%;
+    background: #000;
+    color: white;
+    align-items: center;
+    display: inline-flex;
+    
+}
+
+.par-1{
+    padding-right: 25em;
+    padding-left: 3em;
+}
