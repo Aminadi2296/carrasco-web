@@ -3,6 +3,7 @@ const nodemailer = require("nodemailer");
 const router = Router()
 require('dotenv').config();
 
+const Swal = require('sweetalert2')
 
 router.post('/send-email', async(req, res)=>{
     const {email, message, name, phone, service} = req.body;
@@ -40,7 +41,12 @@ router.post('/send-email', async(req, res)=>{
           const info = await transporter.sendMail( mailOptions, function (err, data) {
             try {
               console.log("FUNCIONA")
-              res.redirect('./success.html')
+              Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+              )
+              // res.redirect('./success.html')
             } catch (error) {
               console.log('Error')
             }

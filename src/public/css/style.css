@@ -45,6 +45,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
+    font-weight: 600;
+    background-color: black;
 }
 .first-header .hours{
     width: 13em;
@@ -61,15 +64,52 @@
     /* border: 3px solid blue; */
 }
 
+.header-bg{
+    background: #000;
+    position: relative;
+    opacity: 0.8;
+
+}
+
+.logo{
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img{
+    margin-right: .5em;
+}
+
+.logo span{
+    font-size: 1.5em;
+}
+
 .call-us p{
     font-size: .8em;
 }
 .btn{
     height: 2.5em;
+    background-color: white;
+    border: none;
+    box-shadow: ;
+    border-radius: .2em;
+    padding: 0 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 nav{
     position: sticky;
     top: 0;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .sticky-header{
@@ -96,21 +136,19 @@ nav{
     margin: 0 1.2em;
 }
 
+.first-section-container{
+    width: 50%;
+    padding-top: 50vh;
+}
+
 .first-section-par{
-    position: absolute;
-    width: 583px;
-    height: 112px;
-    left: 210px;
-    top: 280px;
     font-size: 3.5em;
     font-weight: 900;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .second-button{
-    position: absolute;
-    left: 14.58%;
-    right: 70.76%;
-    top: 33em;
-    bottom: 93.34%;
+   margin-top: 1em;
 }
     /*SECOND SECTION*/
 
@@ -276,6 +314,10 @@ nav{
 }
 .btn:hover{
     cursor: pointer;
+    background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .mail-information{
