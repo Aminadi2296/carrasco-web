@@ -27,7 +27,7 @@
 }
 
 .first-section{
-    height: 60em;
+    height: 110vh;
     background: rgb(116, 102, 102);
     margin-top: -8em;
     background-image: url('../img/main-img.jpg');
@@ -47,7 +47,7 @@
     justify-content: space-between;
     color: white;
     font-weight: 600;
-    background-color: black;
+    /* background-color: black; */
 }
 .first-header .hours{
     width: 13em;
@@ -65,9 +65,9 @@
 }
 
 .header-bg{
-    background: #000;
+    background: rgba(0, 0, 0, 0.61);
     position: relative;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 
 }
 
@@ -92,9 +92,9 @@
 }
 .btn{
     height: 2.5em;
-    background-color: white;
+    background-image: linear-gradient(to right top, #dd781c, #d4701a, #ca6819, #c16117, #b75915); ;
     border: none;
-    box-shadow: ;
+    color: white;
     border-radius: .2em;
     padding: 0 1em;
     font-weight: 500;
@@ -123,6 +123,7 @@ nav{
     box-sizing: border-box;
     top: 0px;
     position: sticky;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.45);
 }
 
 .sticky-header a{
@@ -138,7 +139,7 @@ nav{
 
 .first-section-container{
     width: 50%;
-    padding-top: 50vh;
+    padding-top: 45vh;
 }
 
 .first-section-par{
@@ -153,7 +154,8 @@ nav{
     /*SECOND SECTION*/
 
 .second{
-    height: 75em;
+    /* height: 75em; */
+    padding-bottom: 4em;
     background: rgb(201, 197, 197);
 }
 
@@ -162,17 +164,22 @@ nav{
 }
 
 .who-we-are{
-    height: 70em;
     background: white;
-    transform: translateY(-5em);
-    padding: 2em  0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* transform: translateY(-5em); */
+    position: relative;
+    top: -5em;
+    padding: 2em  0 20em 0;
 }
 
-.who-we-are a img{
+.who-img{
     height: 26em;
-    width: 100%;
     background: gray;
     margin-bottom: 0;
+    margin: -24em 5.5em 0 5.5em;
+    /* top: -24em; */
+    /* z-index: 2; */
+    position: relative;
 }
 
 .who-par{
@@ -195,7 +202,7 @@ nav{
     display: inline-flex;
 }
 
-.element a img{
+.element img{
     width: 3em;
     height: 3em;
     margin-right: 1.8em;
@@ -217,7 +224,15 @@ nav{
     height: 31em;
     background-image: url('../img/main-img.jpg');
     background-size: cover;
-    background-position-y: bottom;
+    background-position-y: 80%;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.container-img{
+    transform: translateY(15em);
+}
+.container-img p{
+    padding: .5em;
 }
 
 .img-par{
@@ -246,15 +261,11 @@ nav{
 }
 
 .card:hover{
-    box-shadow: 0px 17px 13px -3px rgba(16,15,15,0.75);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.45);
     transition: .5s;
+    cursor: pointer;
 }
 
-.card-img{
-    width: 4em;
-    height: 4em;
-    padding-top: 2em;
-}
 
 .card-title{
     padding: 1em 0;
@@ -314,10 +325,11 @@ nav{
 }
 .btn:hover{
     cursor: pointer;
-    background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-2px);
+    background-image: linear-gradient(to right top,#ff9c3e, #dd781c);
+    box-shadow: 0px 15px 20px #b7591536;
+    color: #000;
+    transform: translateY(-2px);
+    font-weight: 600;
 }
 
 .mail-information{
