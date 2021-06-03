@@ -23,7 +23,7 @@ html{
 .section-title{
     font-size: 1.8em;
     padding: 1.5em 0;
-    width: 20em;
+    width: 50%;
     font-weight: 800;
 }
 
@@ -542,4 +542,51 @@ footer{
 
 .bottom-section p{
     padding: 0;
+}
+
+
+@media screen and (max-width: 600px){
+   
+    /*GENERALES*/
+  .wrapper{
+      padding: 0.5em;
+  }
+
+  .section-title{
+    font-size: 1.4em;
+    padding: 1.5em 0;
+    width: 100%;
+    font-weight: 800;
+    }
+
+    .first-section-par{
+        font-size: 2em;
+        font-weight: 700;
+        width: 100%;
+    }
+/*CARDS*/
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .2em;
+    }
+
+
+
+
+    .element-container{
+        display: block;
+    }
+
+/*FOOTER*/
+
+.footer-wrapper{
+    padding: 0;
+    grid-template-columns: 1fr;
+}
+
+.bottom-section{
+    padding: 0%;
+    width: 100%;
+    }
 }
