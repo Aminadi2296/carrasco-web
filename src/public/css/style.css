@@ -226,16 +226,22 @@ nav.active{
     padding-top: 2em;
 }
 
+#commits{
+    padding-bottom: 5em;
+}
 
 .element-container{
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .element{ 
-    width: 33%;
-    height: 9.25em;
-    margin: 0 1.5em;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 1.5em; */
     display: inline-flex;
+    margin-right: 3em;
+
 }
 
 .element img{
@@ -251,6 +257,8 @@ nav.active{
 .element-par{
     margin-top: 1em;
     font-size: 1em;
+    line-height: 1.8em;
+    width: 90%;
 }
 
 
@@ -337,6 +345,7 @@ nav.active{
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 6em 0;
+
 }
 
 .form{
@@ -552,8 +561,13 @@ footer{
    
     /*GENERALES*/
   .wrapper{
-      padding: 0.5em;
-  }
+    padding: 0.5em;
+    }
+
+
+    .wrapper-who{
+        padding: 0.7em;
+    }
 
   .section-title{
     font-size: 1.4em;
@@ -563,59 +577,153 @@ footer{
     }
 
     .first-section-par{
-        font-size: 2em;
-        font-weight: 700;
-        width: 100%;
+    font-size: 2em;
+    font-weight: 700;
+    width: 100%;
+    }
+
+    /*HEADER*/
+    .sticky-header{
+        display: none;
+    }
+
+    .header-bg{
+        display: none;
     }
 /*CARDS*/
-  .card-container{
+    .card-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: .2em;
+    grid-gap: .4em;
     }
 
-
+    .first-section-container{
+        width: 100%;
+    }
 
 
     .element-container{
-        display: block;
+        grid-template-columns:1fr;
+        /* border: 3px solid red; */
+        justify-content: center;
     }
+
+    .element{ 
+        width: 90%;
+        padding-bottom: 3em;
+        /* padding-left: 2.5em; */
+    }
+
+/* MAIL SECTION */  
+    .mail{
+        display: grid;
+        grid-template-columns: 50%;
+        margin: 0;
+        justify-content: center;
+    }
+    
+    .form-send{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        /* border: #b75915 solid 2px; */
+        border-radius: 5px;
+        padding-top: 2em;
+        border: 3px solid rgb(56, 107, 41);
+    }
+    
+    .form-grid{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 40% 40%;
+        /* background-color: red; */
+        grid-gap: .5em;
+        justify-content: center;
+        padding: 0 .5em;
+        /* background: purple; */
+    }
+    
+    .actions-form{
+        width: auto;
+        text-align: center;
+    }
+   
+    
+  
+
+    /*CLIENTS SECTION */
+    
+    .clients{
+        background: var(--bg-gray);
+        padding-bottom: 20em;
+    }
+    .client-container{
+        display: inline-block;
+        margin-top: auto;
+        align-items: center;
+        /* background: red; */
+        margin-bottom: 1em;
+        justify-content: end;
+        height: auto;
+    }
+    .card-par{
+        padding-top: 1em;
+        text-align: justify;
+        line-height : 1.5em;
+    }
+    
+    .client-pic{
+        width:4em;
+        height:4em;
+        border-radius:150px;
+        border: none;
+        margin-right: .5em;
+    }
+    
 
 /*FOOTER*/
 
 .footer-wrapper{
     padding: 0;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .bottom-section{
+    width: 100%;
+    /* background: red; */
+
+}
+
+.bottom-section p{
+    font-size: .8em;
+}
+.footer-left{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+    grid-column: 1/4;
+}
+
+.footer-par{
+    padding: 0;
+}
+.footer-center{
+    margin: 0;
+    padding: 0;
+    grid-column: 1/2;
+}
+
+
+.footer-right{
+    justify-content: center;
+    grid-column: 2/3;
     padding: 0%;
-    width: 100%;
-    }
+    margin: 0%;
 }
 
 
-                /* PRUEBA */
-.section{
-    height: 100vh;
-    width: 100%;
-}
 
-.one{
-    background-color: red;
-}
-.two{
-    background-color: fuchsia;
-}
-.three{
-    background-color: aquamarine;
-}
-.four{
-    background-color: yellow;
-}
-.five{
-    background-color: #b75915;
-}
-.six{
-    background-color: olive;
 }
