@@ -190,15 +190,16 @@ nav{
 }
 
 .who-img{
-    height: 26em;
-    background: gray;
     margin-bottom: 0;
     margin: -24em 5.5em 0 5.5em;
     /* top: -24em; */
     /* z-index: 2; */
     position: relative;
 }
-
+.who-img img{
+    height: auto;
+    width: 100%;
+}
 .who-par{
     margin-bottom: 3em;
 }
@@ -240,15 +241,15 @@ nav{
 
 .img-section{
     height: 31em;
-    background-image: url('../img/main-img.jpg');
+    background-image: url('../img/constructor2.jpg');
     background-size: cover;
-    background-position-y: 80%;
+    background-position-y: 40%;
     color: white;
     text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin-bottom: -3em;
 }
 .container-img{
-    transform: translateY(15em);
+    transform: translateY(16em);
 }
 .container-img p{
     padding: .5em;
@@ -399,7 +400,8 @@ nav{
 .client-container{
     display: inline-flex;
     align-items: center;
-    padding-top: 4em;
+    background: red;
+    justify-content: end;
 }
 .card-par{
     padding-top: 1em;
@@ -497,16 +499,14 @@ footer{
 }
 
 .bottom-section{
-    grid-column: 1/4;
-    height: 3em;
+    padding: 1em 0;
     width: 100%;
     background: #e47915;
     color: white;
     align-items: center;
-    display: inline-flex;
+    text-align: center;
 }
 
-.par-1{
-    padding-right: 25em;
-    padding-left: 3em;
+.bottom-section p{
+    padding: 0;
 }
