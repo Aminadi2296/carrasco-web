@@ -47,12 +47,14 @@ controller.message =  async(req, res)=>{
     
           const info = await transporter.sendMail( mailOptions, function (err, data) {
             try {
-              console.log("FUNCIONA")
-              res.redirect('./')
+                console.log("FUNCIONA")
+                res.redirect('../success.html')
             } catch (error) {
               console.log('Error en info')
             }
           });
+
+          
 
           // console.log('Message Info', info.messageId)
 
