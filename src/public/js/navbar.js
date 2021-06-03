@@ -1,14 +1,12 @@
-
-
 const sections = document.querySelectorAll('section');
 const sectionsArr = Array.from(sections);
 
-const navItems = document.querySelectorAll('nav li a');
+const navItems = document.querySelectorAll('nav a');
 function activateNavByIndex(index) {
-  if (sections[index].classList.contains('active'))
+  if (sectionsArr[index].classList.contains('active'))
      return;
 
-  const currentActive = document.querySelectorAll('nav .active');
+  const currentActive = document.querySelectorAll('.active');
   for (let i = currentActive.length - 1; i >= 0; i--) {
     currentActive[i].classList.remove('active');
   }
@@ -26,7 +24,7 @@ const intersectionCallback = (entries, observer) => {
 
 const intersectionOptions = {
   threshold: [0, 0.5, 1],
-  rootMargin: '0px 0px 0px 0px'
+  rootMargin: '60px 0px 0px 0px'
 };
 
 const intersectionObserver = new IntersectionObserver(intersectionCallback, intersectionOptions);
