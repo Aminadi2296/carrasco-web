@@ -6,8 +6,6 @@
 
 }
 
-
-
 .small-title{
     font-size: .9em;
     color: #c16117;
@@ -21,11 +19,9 @@
     font-weight: 800;
 }
 
-
 .wrapper{
     padding: 0 13em;
     /* border: 10px solid rgb(187, 255, 0); */
-    
 }
 
 .first-section{
@@ -399,9 +395,20 @@ nav{
     margin-right: .5em;
 }
 
+/*SECTION OUR IMPACT*/
+.bg-prueba{
 
-
-
+    color: white;
+    background: black;
+    padding-top:3em;
+    padding-bottom: 3em;
+ 
+}
+.element-title2{
+    font-size: 2.5em;
+    color: #e47915;
+    font-weight: 700;
+}
 /* FOOTER */
 footer{
     width: 100%;
@@ -449,6 +456,9 @@ footer{
      font-size:.9em;
 }
 
+.footer-center a:hover{
+    color:#e47915;
+}
 
 .right-container{
     display: inline-flex;
@@ -459,12 +469,11 @@ footer{
 .right-container img{
     height: 1em;
     width: 1em;
-
 }
 .contact-par{
     font-size: .8em;
     padding: 0 2.5em;
-   
+
 }
 
 .bottom-section{
@@ -475,7 +484,6 @@ footer{
     color: white;
     align-items: center;
     display: inline-flex;
-    
 }
 
 .par-1{
