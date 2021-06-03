@@ -10,7 +10,8 @@
 
 .small-title{
     font-size: .9em;
-    color: green;
+    color: #c16117;
+    font-weight: 700;
 }
 
 .section-title{
@@ -370,7 +371,6 @@ nav{
 }
 
 .client-pic{
-    background: red;
     width:2em;
     height:2em;
     border-radius:150px;
@@ -383,8 +383,12 @@ nav{
 
 /* FOOTER */
 footer{
-   
     width: 100%;
+}
+
+.title-footer{
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 .footer-wrapper{
@@ -392,39 +396,61 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.footer-left{
-    background: red;
+
+.logo-container{
+    display: flex;
+    align-items: flex-end;
 }
-.footer-center{
-    background: yellow;
+.logo-par{
+    font-weight: 800;
+    font-size: 1.4em;
+    padding-left: .2em;
+}
+
+.footer-par{
+    padding: 2em 0;
+    line-height: 1.6em;
+    font-size: .9em;
+    width: 70%;
+}
+
+.icons-footer a img{
+    padding-left: 1em;
     
 }
-.footer-right{
-    background: blue;
-  
+
+.footer-center a{
+    display: list-item;
+    text-decoration: none;
+     list-style: none;
+     color: var(--graydark);
+     margin-top: 1.5em;
+     font-size:.9em;
 }
 
 
 .right-container{
     display: inline-flex;
     align-items: center;
-    padding: 1.5em 0;
+    padding: 1.5em .5em;
     
 }
 .right-container img{
-    height: 2em;
-    width: 2em;
+    height: 1em;
+    width: 1em;
+
 }
 .contact-par{
     font-size: .8em;
-    width: 60%;
+    padding: 0 2.5em;
+   
 }
 
 .bottom-section{
     grid-column: 1/4;
     height: 3em;
     width: 100%;
-    background: #000;
+    background: #e47915;
     color: white;
     align-items: center;
     display: inline-flex;
