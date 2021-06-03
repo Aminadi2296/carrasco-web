@@ -53,12 +53,10 @@ controller.message =  async(req, res)=>{
               console.log('Error en info')
             }
           });
-
-          
-
           // console.log('Message Info', info.messageId)
-
-          
-           
     }
+
+
+
+    
 module.exports = controller

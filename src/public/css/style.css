@@ -125,6 +125,9 @@ nav{
     font-size: 1.2em;
     font-weight: 600;
 }
+nav.active{
+    background-color: red;
+}
 
 .sticky-header{
     z-index: 1;
@@ -589,4 +592,30 @@ footer{
     padding: 0%;
     width: 100%;
     }
+}
+
+
+                /* PRUEBA */
+.section{
+    height: 100vh;
+    width: 100%;
+}
+
+.one{
+    background-color: red;
+}
+.two{
+    background-color: fuchsia;
+}
+.three{
+    background-color: aquamarine;
+}
+.four{
+    background-color: yellow;
+}
+.five{
+    background-color: #b75915;
+}
+.six{
+    background-color: olive;
 }

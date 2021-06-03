@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
-<body>
-    
+<body>  
     <div class="header-bg">
         <div class="wrapper">
             <header class="first-header ">
@@ -39,14 +38,14 @@
 
 
     <header class="sticky-header wrapper">
-        <nav class="">
-            <ul>
-                <li><a class="active" href="#">Inicio</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#commits">Reseñas</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#mail">Contacto</a></li>
-                <li><a href="#clients">Clientes</a></li>
+        <nav id="nav">
+            <ul class="nav-list">
+                <li ><a data-nav="home" class="active homeNavItem" href="#home">Inicio</a></li>
+                <li ><a data-nav="about" class="aboutNavItem" href="#about">Acerca de</a></li>
+                <li ><a data-nav="commits" class="commitsNavItem" href="#commits">Reseñas</a></li>
+                <li ><a data-nav="services" class="servicesNavItem" href="#services">Servicios</a></li>
+                <li ><a data-nav="mail" class="mailNavItem" href="#mail">Contacto</a></li>
+                <li ><a data-nav="clients" class="clientsNavItem" href="#clients">Clientes</a></li>
             </ul>
         </nav>
         <div class="icons">
@@ -55,7 +54,7 @@
         </div>
     </header>
 
-
+    <section id="home">
     <div class="first-section">
         <div class="wrapper">
             <div class="first-section-container">
@@ -372,10 +371,12 @@
         
         <p>© 2021 Company. Privacy Policy | Terms & Conditions</p>
     </div>
+
+    
+    <script src="./js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
 </body>
-<script src="./js/navbar.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="./js/index.js"></script>
 
 
 </html>

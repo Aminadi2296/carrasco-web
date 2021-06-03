@@ -1,34 +1,31 @@
-const sections = document.querySelectorAll('section');
-const sectionsArr = Array.from(sections);
+const sections = document.querySelectorAll("section")
+const navLink = document.querySelectorAll('.nav-list li')
 
-const navItems = document.querySelectorAll('nav a');
-function activateNavByIndex(index) {
-  if (sectionsArr[index].classList.contains('active'))
-     return;
-
-  const currentActive = document.querySelectorAll('.active');
-  for (let i = currentActive.length - 1; i >= 0; i--) {
-    currentActive[i].classList.remove('active');
-  }
-  navItems[index].classList.add('active');
+const options = {
+	threshold: "0.5" // 0.6 == 60% => section
 }
 
-const intersectionCallback = (entries, observer) => {
-  if (entries[0].intesectionRatio <= 0)
-      return;
-  
-  console.log(entries);
-  if (entries[0].intersectionRatio > 0.75) {    activateNavByIndex(sectionsArr.indexOf(entries[0].target))
-  }
-};
+const observer = new IntersectionObserver(entries =>{
+	entries.forEach(e =>{
+		navLink.forEach((link)=>{
+			// link.classList.remove('active')
 
-const intersectionOptions = {
-  threshold: [0, 0.5, 1],
-  rootMargin: '60px 0px 0px 0px'
-};
+			if(e.target.id === link.dataset.nav){
+				link.classList.add('active')
+			}
+		})
 
-const intersectionObserver = new IntersectionObserver(intersectionCallback, intersectionOptions);
+		console.log(navLink)
+		if(e.isIntersecting){
+			console.log(e.target.id)
+			navLink.map((item)=> console.log(item))
+		}
+		
+	})
+}, options)
 
-for (let i = 0; i < sections.length; i++) {
-  intersectionObserver.observe(sections[i]);  
-}
+
+
+sections.forEach(section =>{
+	observer.observe(section)
+})
