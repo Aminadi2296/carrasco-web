@@ -43,7 +43,13 @@ html{
 
 
     /*HEADER*/
+    .icon-mobile a{
+        display: none;
+    }
 
+    .icon-hamburguer{
+        display: none;
+    }
 .first-header{
     height: 4em;
     width:100%; 
@@ -125,9 +131,7 @@ nav{
     font-size: 1.2em;
     font-weight: 600;
 }
-nav.active{
-    background-color: red;
-}
+
 
 .sticky-header{
     z-index: 1;
@@ -149,11 +153,12 @@ nav.active{
     color: black;
 }
 .active{
-    border-bottom: #b75915 solid 2px;
+    border-bottom: #b75915 solid 3px;
+    transition: all 250ms;
 }
 
 .sticky-header a:hover{
-    border-bottom: #b75915 solid 2px;
+    border-bottom: #b75915 solid 3px;
 }
 .sticky-header ul li{
     display: inline;
@@ -352,6 +357,7 @@ nav.active{
     margin-top: 2.2em;
     /* border: solid red 2px; */
     padding-bottom: 4em;
+    
 }
 
 .form-send{
@@ -359,7 +365,7 @@ nav.active{
     justify-content: center;
     text-align: center;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
+    /* max-width: 100%; */
     /* border: #b75915 solid 2px; */
     border-radius: 5px;
     padding-top: 2em;
@@ -583,10 +589,24 @@ footer{
     }
 
     /*HEADER*/
-    .sticky-header{
+
+    .sticky-header ul{
         display: none;
     }
+    .icon-mobile a{
+        display: flex;
+        align-items: center;
+    }
 
+    .icon-hamburguer{
+        display: flex;
+    }
+
+    .icon-mobile p{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-left: .5em;
+    }
     .header-bg{
         display: none;
     }
@@ -605,21 +625,37 @@ footer{
     .element-container{
         grid-template-columns:1fr;
         /* border: 3px solid red; */
-        justify-content: center;
+        /* justify-content: center; */
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .element-par{
+        margin-top: 1em;
+        font-size: 1em;
+        line-height: 1.8em;
+        width: 100%;
     }
 
     .element{ 
-        width: 90%;
+        /* border: solid 2px #b75915; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
         padding-bottom: 3em;
+
         /* padding-left: 2.5em; */
     }
 
 /* MAIL SECTION */  
     .mail{
         display: grid;
-        grid-template-columns: 50%;
+        grid-template-columns: 100%;
         margin: 0;
         justify-content: center;
+    }
+    .form{
+        max-width: 100vw;
     }
     
     .form-send{
@@ -627,11 +663,12 @@ footer{
         justify-content: center;
         text-align: center;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        width: 100%;
         /* border: #b75915 solid 2px; */
+        padding: 0;
+        margin: 0;
         border-radius: 5px;
         padding-top: 2em;
-        border: 3px solid rgb(56, 107, 41);
+        /* border: 3px solid rgb(56, 107, 41); */
     }
     
     .form-grid{
@@ -639,6 +676,7 @@ footer{
         justify-content: space-between;
         grid-template-columns: 40% 40%;
         /* background-color: red; */
+        max-width: 100vw;
         grid-gap: .5em;
         justify-content: center;
         padding: 0 .5em;
@@ -656,8 +694,8 @@ footer{
     /*CLIENTS SECTION */
     
     .clients{
-        background: var(--bg-gray);
-        padding-bottom: 20em;
+        padding-bottom: 3em;
+
     }
     .client-container{
         display: inline-block;
