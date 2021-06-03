@@ -12,10 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="./icon.ico">
+    <link rel="stylesheet" href="sweetalert2.min.css">
 
 </head>
 
-<body>
+<body >
     <div class="header-bg">
         <div class="wrapper">
             <header class="first-header ">
@@ -199,23 +200,25 @@
 
 
 
-    <section class="mail">
+    <section class="mail wrapper">
         <div class="form-send">
             <h2 class="mail-title">Make an btn</h2>
-            <form class="form" action="send-email" method="post">
-                <div>
+            <form class="form" id="form" action="send-email" method="post" onsubmit="sweetAlert()">
+                <div class="form-grid">
                     <input type="name" name="name" class="input" id="name" placeholder="Nombre">
                     <input type="email" name="email" class="input" id="email" placeholder="Email">
                 </div>
-                <div>
+                <div class="form-grid">
                     <input type="tel" name="phone" class="input" id="phone" placeholder="Teléfono">
                     <input type="on" name="service" class="input" id="service" placeholder="servicio">
                 </div>
-                <textarea name="message" id="text" cols="30" rows="10"
-                    placeholder="Dinos acerca de los servicios que solicitas"></textarea>
+                <div class="form-grid">
+                    <textarea name="message" id="text" cols="30" rows="10"
+                        placeholder="Dinos acerca de los servicios que solicitas"></textarea>
+                </div>
                 <br>
                 <div class="actions-form">
-                    <button type="submit" class="btn btn--tertiary">ENVIAR ></button>
+                    <button type="submit" class="btn btn--tertiary" onclick="">ENVIAR ></button>
                 </div>
             </form>
         </div>
@@ -317,9 +320,16 @@
             </div>
             <div class="bottom-section">
                 <p class="par-1">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</p>
-                <p>© 2018 Company.   Privacy Policy | Terms & Conditions</p>
+                <p ">© 2018 Company.   Privacy Policy | Terms & Conditions</p>
             </div>
         </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    
+</script>
+<script src="./js/index.js"></script>
+
 
 </html>

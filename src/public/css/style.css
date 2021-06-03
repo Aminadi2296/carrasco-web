@@ -10,13 +10,15 @@
 
 .small-title{
     font-size: .9em;
-    color: green;
+    color: #d4701a;
+    font-weight: 500;
 }
 
 .section-title{
     font-size: 1.8em;
     padding: 1.5em 0;
     width: 20em;
+    font-weight: 800;
 }
 
 
@@ -187,7 +189,8 @@ nav{
 }
 
 .element-section{
-    margin-top: 3em;
+    margin-top: 2em;
+    padding-top: 2em;
 }
 
 
@@ -227,6 +230,7 @@ nav{
     background-position-y: 80%;
     color: white;
     text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: -3em;
 }
 .container-img{
     transform: translateY(15em);
@@ -244,6 +248,7 @@ nav{
  /*SERVICES SECTION */
 .services{
     background: rgb(165, 165, 157);
+    padding-top: 1em;
 }
 .card-container{
     display: grid;
@@ -288,35 +293,51 @@ nav{
 .mail{
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 400px;
-    padding: 4em;
+    margin: 2em 0;
 }
 
 .form{
     margin-top: 1.2em;
+    /* border: solid red 2px; */
+    padding-bottom: 1em;
 }
 
 .form-send{
     display: grid;
     justify-content: center;
     text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    /* border: #b75915 solid 2px; */
+    border-radius: 5px;
 }
 
-.form-send .input{
-    width: calc(200px - 1.2em);
+.form-send input{
     height: 40px;
-    margin: 5px;
     border:none;
     background: #F5F5F5;
-    padding: 0 1.2em;
+    padding: .5em;
+    margin-top: 5px;
 }
+
+.form-grid{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+    /* background-color: red; */
+    grid-gap: .5em;
+    justify-content: center;
+    padding: 0 .5em;
+}
+
 .form-send #text{
-    width: calc(400px + 1.2em);
-    height: 200px;
+    /* width: calc(400px + 1.2em); */
+    
     margin: 5px;
     padding: 1.2em;
     border:none;
     background: #F5F5F5;
+    grid-column: 1/4;
 }
 
 .actions-form{
@@ -350,6 +371,7 @@ nav{
 
 .mail-title{
     font-size: 2.2em;
+    padding-top: .4em;
 }
 
 /*CLIENTS SECTION */
