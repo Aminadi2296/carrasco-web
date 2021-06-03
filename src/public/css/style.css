@@ -145,7 +145,13 @@ nav{
     text-decoration: none;
     color: black;
 }
+.active{
+    border-bottom: #b75915 solid 2px;
+}
 
+.sticky-header a:hover{
+    border-bottom: #b75915 solid 2px;
+}
 .sticky-header ul li{
     display: inline;
     margin: 0 1.2em;
@@ -188,18 +194,26 @@ nav{
     top: -5em;
     padding: 2em  0 20em 0;
 }
-
+.who-img-container{
+    padding: 5%;
+    height: 10em;
+    /* background-color: #000; */
+}
 .who-img{
     margin-bottom: 0;
-    margin: -24em 5.5em 0 5.5em;
-    /* top: -24em; */
+    /* margin: -24em 5.5em 0 5.5em; */
+    top: -24em;
     /* z-index: 2; */
     position: relative;
-}
-.who-img img{
-    height: auto;
+    /* overflow: hidden; */
+    background-image: url('../img/constructor1.jpg');
+    height: 70vh;
     width: 100%;
+    background-position-y: -3em;
+    background-repeat: none;
+    background-size: cover;
 }
+
 .who-par{
     margin-bottom: 3em;
 }
@@ -270,17 +284,27 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5em;
+    height: 100%;
  }
+
+.card-padding{
+    display: grid;
+ height: 100%;
+ /* border: solid purple 2px; */
+}
 
 .card{
      
     text-align: center;
-    align-items: center;
+    /* align-content: space-between;
+    align-items: flex-start; */
+    /* align-items: center; */
+    justify-content: space-between;
     height: 20em;
     padding: 1em;
     background: white;
+    /* background-color: #c16117; */
 }
-
 .card:hover{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.45);
     transition: .5s;
@@ -398,10 +422,13 @@ nav{
     padding-bottom: 20em;
 }
 .client-container{
-    display: inline-flex;
+    display: inline-block;
+    margin-top: auto;
     align-items: center;
-    background: red;
+    /* background: red; */
+    margin-bottom: 1em;
     justify-content: end;
+    height: auto;
 }
 .card-par{
     padding-top: 1em;
@@ -410,22 +437,28 @@ nav{
 }
 
 .client-pic{
-    width:2em;
-    height:2em;
+    width:4em;
+    height:4em;
     border-radius:150px;
     border: none;
     margin-right: .5em;
 }
 
 /*SECTION OUR IMPACT*/
-.bg-prueba{
+.bg-last{
 
     color: white;
-    background: black;
+    background: url(../img/constructor1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     padding-top:3em;
     padding-bottom: 3em;
  
 }
+.bg-last-black{
+   background-color: #000;
+}
+
 .element-title2{
     font-size: 2.5em;
     color: #e47915;

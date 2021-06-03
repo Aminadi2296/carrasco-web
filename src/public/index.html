@@ -13,10 +13,10 @@
         rel="stylesheet">
     <link rel="icon" href="./icon.ico">
     <link rel="stylesheet" href="sweetalert2.min.css">
-
 </head>
 
 <body>
+    
     <div class="header-bg">
         <div class="wrapper">
             <header class="first-header ">
@@ -41,11 +41,12 @@
     <header class="sticky-header wrapper">
         <nav class="">
             <ul>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Especiales</a></li>
-                <li><a href="">Reseñas</a></li>
-                <li><a href="">Tienda</a></li>
-                <li><a href="">Acerca de</a></li>
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#commits">Reseñas</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#mail">Contacto</a></li>
+                <li><a href="#clients">Clientes</a></li>
             </ul>
         </nav>
         <div class="icons">
@@ -55,7 +56,7 @@
     </header>
 
 
-    <section class="first-section">
+    <div class="first-section">
         <div class="wrapper">
             <div class="first-section-container">
                 <div class="first-section-par">
@@ -67,9 +68,9 @@
             </div>
 
         </div>
-    </section>
-    <section class="second wrapper">
-
+    </div>
+    <div class="second wrapper">
+        <section id="about">
         <div class="who-we-are">
             <div class="wrapper-who">
                 <div>
@@ -86,12 +87,14 @@
             </div>
         </div>
         </div>
-
-        <div class="who-img">
-            <img src="./img/constructor1.jpg" alt="">
+        <div class="who-img-container">
+            <div class="who-img">
+                <!-- <img src="./img/constructor1.jpg" alt=""> -->
+            </div>
         </div>
-
-        <div class="commitments ">
+</section>
+<section id="commits">
+        <div  class="commitments ">
             <div class="element-section">
                 <p class="small-title">TE PROMETEMOS</p>
             </div>
@@ -125,16 +128,17 @@
                 </div>
 
             </div>
-    </section>
+        </section>
+    </div>
 
 
-    <section class="img-section">
+    <div class="img-section">
         <div class="wrapper container-img">
             <p class="img-par section-title">Nuestro personal especializado está listo para ayudarte</p>
         </div>
-    </section>
+    </div>
 
-    <section class="services wrapper">
+    <section id="services" class="services wrapper">
         <div class="element-section">
             <p class="small-title">NUESTROS SERVICIOS</p>
         </div>
@@ -227,7 +231,7 @@
         </div>
     </section>
 
-    <section class="clients wrapper">
+    <section id="clients" class="clients wrapper">
         <div class="element-section">
             <p class="small-title">NUESTROS CLIENTES</p>
         </div>
@@ -236,35 +240,40 @@
         </div>
         <div class="card-container">
             <div class="card">
-                <div class="card-par">“El servicio de Grupo JJ me encantó. Superaron todas  las expectativas y me ayudaron a mejorar las ideas que ya tenía para realizar mi casa soñada. Todos mis familiares y amigos están encantados y felices con los resultados”</div>
-                <div class="client-container">
-                    <a href=""><img class="client-pic" src="./img/client-picture.svg" alt=""></a>
-                    <p>Cristiano Ronaldo</p>
+                <div class="card-padding">                    
+                    <div class="card-par">“El servicio de Grupo JJ me encantó. Superaron todas  las expectativas y me ayudaron a mejorar las ideas que ya tenía para realizar mi casa soñada. Todos mis familiares y amigos están encantados y felices con los resultados”</div>
+                    <div class="client-container">
+                        <a href=""><img class="client-pic" src="./img/client-picture.svg" alt=""></a>
+                        <p>Cristiano Ronaldo</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card-par">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation
-                    ullamco cillum ut enim dolore.”</div>
-                <div class="client-container">
-                    <a href=""><img class="client-pic" src="./img/client-picture.svg" alt=""></a>
-                    <p>Cristiano Ronaldo</p>
+                <div class="card-padding">
+                    <div class="card-par">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incidire ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation
+                        ullamco cillum ut enim dolore.”</div>
+                        <div class="client-container">
+                            <a href=""><img class="client-pic" src="./img/client-picture.svg" alt=""></a>
+                            <p>Cristian Perez</p>
+                        </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card-par">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation
-                    ullamco cillum ut enim dolore.”</div>
-                <div class="client-container">
-                    <a href=""><img class="client-pic" src="./img/client-picture.svg" alt=""></a>
-                    <p>Cristiano Ronaldo</p>
-                </div>
+                <div class="card-padding">
+                    <div class="card-par">“Lorem ip sum dolor sit sum dolor sitsum dolor sitsum dolor sitssum dolor sitsum dolor sitsum dolor sum dolor sitsum dolor sitsum dolor sitsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labo”</div>
+                        <div class="client-container">
+                            <a href=""><img class="client-pic" src="./img/client-picture.svg" alt=""></a>
+                            <p>Reinalda Ronaldo</p>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
 
 
-    <section class="commitments wrapper bg-prueba">
+    <section class=" wrapper bg-last">
         <div class="element-section">
             <p class="small-title">NUESTRO IMPACTO</p>
         </div>
@@ -362,11 +371,8 @@
         <p>© 2021 Company. Privacy Policy | Terms & Conditions</p>
     </div>
 </body>
-
+<script src="./js/navbar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-
-</script>
 <script src="./js/index.js"></script>
 
 
