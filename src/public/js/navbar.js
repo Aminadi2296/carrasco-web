@@ -1,6 +1,11 @@
 const sections = document.querySelectorAll("section")
 const navLink = document.querySelectorAll('.nav-list li a')
 
+function navIcon(x) {
+	x.classList.toggle("change");
+  }
+
+
 const options = {
 	threshold: "0.5" // 0.6 == 60% => section
 }
