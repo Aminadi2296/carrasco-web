@@ -3,8 +3,16 @@ const navLink = document.querySelectorAll('.nav-list li a')
 
 function navIcon(x) {
 	x.classList.toggle("change");
-  }
+	const ul = document.querySelector('.nav-list')
+	const icon = document.querySelector('#menu')
 
+	if(!icon.checked){
+		ul.style.display = 'flex'
+	} else{
+		ul.style.display = 'none'
+	}
+
+  }
 
 const options = {
 	threshold: "0.5" // 0.6 == 60% => section

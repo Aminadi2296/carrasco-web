@@ -41,6 +41,7 @@
         <div class="icon-mobile">
             <a href=""><img src="./icon.ico" width="30px" alt=""><p>Grupo JJ</p></a>
         </div>
+        
         <nav id="nav">
             <ul class="nav-list">
                 <li ><a data-nav="home" class="active homeNavItem" href="#home">Inicio</a></li>
@@ -51,15 +52,18 @@
                 <li ><a data-nav="clients" class="clientsNavItem" href="#clients">Clientes</a></li>
             </ul>
         </nav>
-        <div class="icon-hamburguer">
-            <a href=""><img src="./img/facebook 1.svg" alt=""></a>
-            <div class="container-icon" onclick="navIcon(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-              
-        </div>
+        <input type="checkbox" name="my-checkbox" id="menu">
+        <label for="menu">
+            <div class="icon-hamburguer" class="z-index: 100" >
+                <div class="container-icon" onclick="navIcon(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div> 
+            </div>
+        </label>
+       
+        
     </header>
 
     <section id="home"></section>

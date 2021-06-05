@@ -50,6 +50,11 @@ html{
     .icon-hamburguer{
         display: none;
     }
+    
+
+    #menu{
+        display: none;
+    }
 .first-header{
     height: 4em;
     width:100%; 
@@ -614,29 +619,39 @@ footer{
 
     /*HEADER*/
     nav{
-        position: fixed;
+        /* position: fixed; */
     }
-    #nav{
+    #nav ul{
         /* background-color: red; */
-        position: absolute;
+        position: fixed;
         left: 0;
-        width: 100vw;
+        right: 0;
         opacity: .9;
-        z-index: 0;
+        display: none;
+        transition: all 350ms;
+    }
+
+    #menu:checked ~ #nav ul{
+        display: flex;
     }
     .sticky-header ul{
         position: relative;
         width: 100%;
-        height: 100vh;
-        display: flex;
+        top: 4em;
+        height: calc(100vh - 4em);
+        /* display: flex; */
         flex-direction: column;
         background-color: white;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        padding-top: 6em;
+        padding-top: 4em;
     }
     .sticky-header ul li{
         text-align: center;
         padding: 1em;
+    }
+
+    .sticky-header ul li a{
+        font-size: 2em;
     }
     .icon-mobile a{
         display: flex;
