@@ -229,11 +229,11 @@ nav{
     /* transform: translateY(-5em); */
     position: relative;
     top: -5em;
-    padding: 2em  0 20em 0;
+    padding: 2em  0 15em 0;
 }
 .who-img-container{
-    padding: 5%;
-    height: 10em;
+    padding: 0 20em;
+    height: 22vh;
     /* background-color: #000; */
 }
 .who-img{
@@ -252,7 +252,8 @@ nav{
 }
 
 .who-par{
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    line-height: 2em;
 }
 
 .element-section{
@@ -346,7 +347,7 @@ nav{
     /* align-items: center; */
     justify-content: space-between;
     height: 20em;
-    padding: 1em;
+    padding: 3em 1em;
     background: white;
     /* background-color: #c16117; */
 }
@@ -359,13 +360,19 @@ nav{
 
 .card-title{
     padding: 1em 0;
+
+    font-weight: 800;
+    font-size: 1.2em;
 }
 
 .card-par{
     padding: 0 1.8em ;
 }
 
-
+.card-img{
+    height: 3em;
+    width: 3em;
+}
 
 .btn-container{
     padding: 3em 0;
@@ -611,6 +618,10 @@ footer{
     font-weight: 800;
     }
 
+    .first-section{
+        height: 80vh;
+    }
+
     .first-section-par{
     font-size: 3em;
     font-weight: 700;
@@ -641,14 +652,28 @@ footer{
         width: 100%;
         /* display: none; */
         background-position-y:0;
+
     }
 
     .who-img-container{
-        padding: 5%;
-        height: 1em;
-      
+        padding: 10em 5em;
+        height: 10em; 
+        background-color: red;
     }
 
+    .who-img{
+        margin-bottom: 0;
+        /* margin: -24em 5.5em 0 5.5em; */
+        top: -22em;
+        /* z-index: 2; */
+        position: relative;
+        background-image: url('../img/constructor1.jpg');
+        height: 40vh;
+        width: 100%;
+        background-position-y: -3em;
+        background-repeat: none;
+        background-size: cover;
+    }
 
     #commits{
         padding-bottom: 1em;
@@ -724,7 +749,10 @@ footer{
         text-align: center;
     }
    
-    
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+        
+    }
   
 
     /*CLIENTS SECTION */
@@ -738,7 +766,7 @@ footer{
 .footer-wrapper{
     padding: 1em 2em;
     column-gap: 1em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .bottom-section{
@@ -868,7 +896,6 @@ footer{
 .header-bg{
     display: none;
 }
-
     .card-container{
         grid-template-columns: 1fr;
     }
@@ -944,6 +971,9 @@ footer{
     }
 
     
+    .first-section{
+        height: 50vh;
+    }
 
     .who-img{
         top: -27em;
@@ -1063,6 +1093,11 @@ footer{
 
 }
 
+.footer-left{
+    width: auto;
+    background: red;
+}
+
 .bottom-section p{
     font-size: .8em;
 }
@@ -1130,7 +1165,12 @@ footer{
 }
 
 @media screen and (max-width: 340px){
-        /* section SEND EMAIL */
+    .first-section{
+        height: 50vh;
+    }
+   
+    
+    /* section SEND EMAIL */
 
 .mail{
     margin: 2em 0;
@@ -1155,19 +1195,5 @@ footer{
 
 }
 
-@media screen and (max-width: 290px){
-    /* section SEND EMAIL */
 
-.form-grid{
-display: grid;
-    justify-content: space-between;
-    grid-template-columns: 47% 47%;
-    /* background-color: red; */
-    max-width: 100vw;
-    grid-gap: .5em;
-    justify-content: center;
-    padding: 0 .5em;
-    /* background: purple; */
-}
 
-}
