@@ -53,7 +53,7 @@ html{
     
 
     #menu{
-        /* display: none; */
+        display: none;
     }
 .first-header{
     height: 4em;
