@@ -215,41 +215,21 @@ nav{
 
 .second{
     /* height: 75em; */
-    padding-bottom: 4em;
+    /* padding-bottom: 4em; */
     background: var(--bg-gray);
 }
 
 .wrapper-who{
     padding: 0 5.5em;
+    border: #b75915 solid 1px;
 }
 
 .who-we-are{
     background: white;
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    /* transform: translateY(-5em); */
-    position: relative;
-    top: -5em;
-    padding: 2em  0 15em 0;
+    border: BLUE solid 2px;
+    padding: 2em  0 8em 0;
 }
-.who-img-container{
-    padding: 0 20em;
-    height: 22vh;
-    /* background-color: #000; */
-}
-.who-img{
-    margin-bottom: 0;
-    /* margin: -24em 5.5em 0 5.5em; */
-    top: -24em;
-    /* z-index: 2; */
-    position: relative;
-    /* overflow: hidden; */
-    background-image: url('../img/constructor1.jpg');
-    height: 70vh;
-    width: 100%;
-    background-position-y: -3em;
-    background-repeat: none;
-    background-size: cover;
-}
+
 
 .who-par{
     margin-bottom: 2em;
@@ -643,37 +623,6 @@ footer{
         /* border: 3px solid blue; */
     }
     
-    
-
-    .who-img{
-        top: -27em;
-        position: relative;
-        height: 30vh;
-        width: 100%;
-        /* display: none; */
-        background-position-y:0;
-
-    }
-
-    .who-img-container{
-        padding: 10em 5em;
-        height: 10em; 
-        background-color: red;
-    }
-
-    .who-img{
-        margin-bottom: 0;
-        /* margin: -24em 5.5em 0 5.5em; */
-        top: -22em;
-        /* z-index: 2; */
-        position: relative;
-        background-image: url('../img/constructor1.jpg');
-        height: 40vh;
-        width: 100%;
-        background-position-y: -3em;
-        background-repeat: none;
-        background-size: cover;
-    }
 
     #commits{
         padding-bottom: 1em;
@@ -975,20 +924,7 @@ footer{
         height: 50vh;
     }
 
-    .who-img{
-        top: -27em;
-        position: relative;
-        height: 30vh;
-        width: 100%;
-        /* display: none; */
-        background-position-y:0;
-    }
-
-    .who-img-container{
-        padding: 5%;
-        height: 1em;
-      
-    }
+    
 
 
     #commits{
