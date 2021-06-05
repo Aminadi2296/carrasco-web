@@ -2,15 +2,23 @@ const sections = document.querySelectorAll("section")
 const navLink = document.querySelectorAll('.nav-list li a')
 
 function navIcon(x) {
-	x.classList.toggle("change");
+	x.classList.add("change");
 	const ul = document.querySelector('.nav-list')
+	const li = document.querySelectorAll('.nav-list li')
 	const icon = document.querySelector('#menu')
 
 	if(!icon.checked){
 		ul.style.display = 'flex'
+		li.forEach(e => e.onclick = ()=>{
+			ul.style.display = 'none'
+			x.classList.remove("change");
+			icon.checked = false;
+		})
 	} else{
 		ul.style.display = 'none'
+		x.classList.remove("change");
 	}
+	
 
   }
 

@@ -53,7 +53,7 @@ html{
     
 
     #menu{
-        display: none;
+        /* display: none; */
     }
 .first-header{
     height: 4em;
@@ -758,9 +758,7 @@ footer{
     grid-column: 1/4;
 }
 
-.card{
-    /* min-height: 50vh; */
-}
+
 
 .footer-par{
     padding: 1em 0;
@@ -820,9 +818,7 @@ footer{
 @media screen and (max-width: 860px){
 
 /*HEADER*/
-nav{
-    /* position: fixed; */
-}
+
 #nav ul{
     /* background-color: red; */
     position: fixed;
@@ -876,9 +872,7 @@ nav{
     .card-container{
         grid-template-columns: 1fr;
     }
-    .card{
-        
-    }
+    
 
     
 /* MAIL SECTION */  
@@ -1145,10 +1139,6 @@ nav{
 
 .form-send{
     padding-top: 1em;
-}
-
-.form-send input{
-   
 }
 
 .form-grid{
