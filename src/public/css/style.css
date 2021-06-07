@@ -221,12 +221,12 @@ nav{
 
 .wrapper-who{
     padding: 0 5.5em;
-    border: #b75915 solid 1px;
+    /* border: #b75915 solid 1px; */
 }
 
 .who-we-are{
     background: white;
-    border: BLUE solid 2px;
+    /* border: BLUE solid 2px; */
     padding: 2em  0 8em 0;
 }
 
@@ -234,6 +234,25 @@ nav{
 .who-par{
     margin-bottom: 2em;
     line-height: 2em;
+}
+
+/* who img  */
+.who-img-container{
+    width: 100%;
+}
+
+.who-img{
+    padding: 0 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.who-img img{
+    width: 100%;
+    margin-top: -8em;
+    margin-bottom: 4em;
+    background-color: gray;
 }
 
 .element-section{
@@ -920,11 +939,6 @@ footer{
     }
 
     
-    .first-section{
-        height: 50vh;
-    }
-
-    
 
 
     #commits{
@@ -945,7 +959,7 @@ footer{
         width: 100%;
         text-align: center;
         justify-content: center;
-        padding-top: 45vh;
+        padding-top: 35vh;
     }
     .first-section-container .firt-action{
         text-align: center;
@@ -1101,10 +1115,7 @@ footer{
 }
 
 @media screen and (max-width: 340px){
-    .first-section{
-        height: 50vh;
-    }
-   
+    
     
     /* section SEND EMAIL */
 
