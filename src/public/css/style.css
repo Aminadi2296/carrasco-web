@@ -280,6 +280,7 @@ nav{
 .element-section{
     margin-top: 2em;
     padding-top: 2em;
+    /* background-color: rebeccapurple; */
 }
 
 #commits{
@@ -680,7 +681,8 @@ footer{
     .element-container{
         grid-template-columns:1fr 1fr;
         /* border: 3px solid red; */
-        /* justify-content: center; */
+        /* justify-items: center; */
+        /* align-items: center; */
         width: 100%;
         /* background-color: red; */
     }
