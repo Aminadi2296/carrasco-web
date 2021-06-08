@@ -640,8 +640,10 @@ footer{
     font-weight: 800;
     }
 
-    .first-section{
-        height: 80vh;
+    .first-section-container{
+        width: 65%;
+        padding-top: 35vh !important;
+        /* background-color: red; */
     }
 
     .first-section-par{
@@ -791,6 +793,13 @@ footer{
 .sticky-header ul li a{
     font-size: 2em;
 }
+
+.first-section-container{
+    width: 65%;
+    padding-top: 45vh !important;
+    /* background-color: red; */
+}
+
 .icon-mobile a{
     display: flex;
     align-items: center;
@@ -973,11 +982,13 @@ footer{
         height: 20em;
     }
 
+
     .first-section-container{
         width: 100%;
         text-align: center;
         justify-content: center;
-        padding-top: 35vh;
+        padding-top: 45vh !important;
+        /* background-color: rebeccapurple; */
     }
     .first-section-container .firt-action{
         text-align: center;
