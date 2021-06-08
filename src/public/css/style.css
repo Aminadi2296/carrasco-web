@@ -297,7 +297,7 @@ nav{
     height: 100%;
     /* margin: 0 1.5em; */
     display: inline-flex;
-    margin-right: 3em;
+    /* margin-right: 3em; */
 
 }
 
@@ -664,7 +664,7 @@ footer{
         width: 10%;
         /* border: 3px solid blue; */
     }
-    
+
     #commits{
         padding-bottom: 1em;
     }
@@ -1047,9 +1047,11 @@ footer{
     }
     
 
-/*FOOTER*/
-
-
+    .bg-last{
+        padding-top:1em;
+        padding-bottom: 1em;
+        border: greenyellow;
+}
 }
 
 @media screen and (max-width: 340px){
@@ -1079,6 +1081,3 @@ footer{
 }
 
 }
-
-
-
