@@ -10,6 +10,28 @@ html{
     scroll-behavior: smooth;
 }
 
+.whatsapp {
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:40px;
+    right:20px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    z-index:100;
+    opacity: 0;
+    transition: all 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whatsapp-icon {
+    width: 30px;
+  }
+
 :root{
     --bg-gray: rgb(228, 228, 228);
 }
@@ -641,38 +663,6 @@ footer{
         width: 10%;
         /* border: 3px solid blue; */
     }
-    
-<<<<<<< HEAD
-=======
-    .who-img{
-        top: -27em;
-        position: relative;
-        height: 30vh;
-        width: 100%;
-        /* display: none; */
-        background-position-y:0;
-    }
-
-    .who-img-container{
-        padding: 10em 5em;
-        height: 10em; 
-        background-color: red;
-    }
-
-    .who-img{
-        margin-bottom: 0;
-        /* margin: -24em 5.5em 0 5.5em; */
-        top: -22em;
-        /* z-index: 2; */
-        position: relative;
-        background-image: url('../img/constructor1.jpg');
-        height: 40vh;
-        width: 100%;
-        background-position-y: -3em;
-        background-repeat: none;
-        background-size: cover;
-    }
->>>>>>> 8d3fdc6a7251cd80006dffe56907a8ddb3385727
 
     #commits{
         padding-bottom: 1em;

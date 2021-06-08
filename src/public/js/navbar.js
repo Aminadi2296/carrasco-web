@@ -32,12 +32,15 @@ const observer = new IntersectionObserver(entries =>{
 	entries.forEach(e =>{
 		
 		if(e.isIntersecting){
-			// console.log(e.target.id)
+
+			
+
 			navLink.forEach(function (key) {
 				if(key.dataset.nav === e.target.id){
 					key.classList.add('active')
+					
 				} else if(e.target.id === home){
-					console.log('object')
+					// console.log('object')
 				} else{
 					key.classList.remove('active')
 				}
@@ -52,3 +55,16 @@ const observer = new IntersectionObserver(entries =>{
 sections.forEach(section =>{
 	observer.observe(section)
 })
+
+
+const addScroll = ()=>{
+	if(document.documentElement.scrollTop >= 100 || document.body.scrollTop >= 100){
+		document.querySelector('.whatsapp').style.opacity = '1'
+		// console.log(document.documentElement.scrollTop)
+	} else{
+		document.querySelector('.whatsapp').style.opacity = '0'
+		// console.log('no nav')
+	}
+}
+
+window.addEventListener('scroll', addScroll)
