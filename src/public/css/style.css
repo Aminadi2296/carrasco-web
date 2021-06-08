@@ -664,35 +664,6 @@ footer{
         /* border: 3px solid blue; */
     }
     
-    .who-img{
-        top: -27em;
-        position: relative;
-        height: 30vh;
-        width: 100%;
-        /* display: none; */
-        background-position-y:0;
-    }
-
-    .who-img-container{
-        padding: 10em 5em;
-        height: 10em; 
-        background-color: red;
-    }
-
-    .who-img{
-        margin-bottom: 0;
-        /* margin: -24em 5.5em 0 5.5em; */
-        top: -22em;
-        /* z-index: 2; */
-        position: relative;
-        background-image: url('../img/constructor1.jpg');
-        height: 40vh;
-        width: 100%;
-        background-position-y: -3em;
-        background-repeat: none;
-        background-size: cover;
-    }
-
     #commits{
         padding-bottom: 1em;
     }
