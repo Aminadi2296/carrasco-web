@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.whatsapp {
+/* .whatsapp {
     position:fixed;
     width:50px;
     height:50px;
@@ -30,7 +30,7 @@ html{
   
   .whatsapp-icon {
     width: 30px;
-  }
+  } */
 
 :root{
     --bg-gray: rgb(228, 228, 228);
@@ -1061,8 +1061,10 @@ footer{
     .bg-last{
         padding-top:1em;
         padding-bottom: 1em;
-        border: greenyellow;
+        /* border: greenyellow; */
+        background-attachment: scroll;
 }
+
 }
 
 @media screen and (max-width: 340px){

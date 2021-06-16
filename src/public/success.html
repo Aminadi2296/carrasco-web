@@ -16,7 +16,7 @@
     <div class="header-bg">
         <div class="wrapper">
             <header class="first-header ">
-                <a href="" class="logo">
+                <a href="/" class="logo">
                     <img src="./icon.ico" alt="logo" width="35px">
                     <span>Grupo JJ</span>
                 </a>
@@ -25,10 +25,10 @@
                     </p>
                 </div>
                 <div class="call-us">
-                    <p>LLÁMANOS <br>0241-1544545
+                    <p>LLÁMANOS <br>0412-0584035
                     </p>
                 </div>
-                <a href="#mail" class="btn btn-ref">Pedir Cotización</a>
+                <a href="/#mail" class="btn btn-ref">Pedir Cotización</a>
             </header>
         </div>
     </div>
@@ -40,12 +40,12 @@
         </div>
         <nav id="nav">
             <ul class="nav-list">
-                <li ><a data-nav="home" class="active homeNavItem" href="#home">Inicio</a></li>
-                <li ><a data-nav="about" class="aboutNavItem" href="#about">Acerca de</a></li>
-                <li ><a data-nav="commits" class="commitsNavItem" href="#commits">Reseñas</a></li>
-                <li ><a data-nav="services" class="servicesNavItem" href="#services">Servicios</a></li>
-                <li ><a data-nav="mail" class="mailNavItem" href="#mail">Contacto</a></li>
-                <li ><a data-nav="clients" class="clientsNavItem" href="#clients">Clientes</a></li>
+                <li ><a data-nav="home" class="active homeNavItem" href="/#home">Inicio</a></li>
+                <li ><a data-nav="about" class="aboutNavItem" href="/#about">Acerca de</a></li>
+                <li ><a data-nav="commits" class="commitsNavItem" href="/#commits">Reseñas</a></li>
+                <li ><a data-nav="services" class="servicesNavItem" href="/#services">Servicios</a></li>
+                <li ><a data-nav="mail" class="mailNavItem" href="/#mail">Contacto</a></li>
+                <li ><a data-nav="clients" class="clientsNavItem" href="/#clients">Clientes</a></li>
             </ul>
         </nav>
         <input type="checkbox" name="my-checkbox" id="menu">
@@ -74,5 +74,34 @@
 
         </div>
     </section>
+    <!--Div where the WhatsApp will be rendered-->
+    <div id="WAButton"></div>
+
+
 </body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+<script>
+    $(function() {
+  $('#WAButton').floatingWhatsApp({
+    phone: '+584243193415', //WhatsApp Business phone number International format-
+    //Get it with Toky at https://toky.co/en/features/whatsapp.
+    headerTitle: 'Envianos un whatsapp!', //Popup Title
+    popupMessage: 'Hola, Como podemos ayudarte?', //Popup Message
+    showPopup: true, //Enables popup display
+    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+    //headerColor: 'crimson', //Custom header color
+    //backgroundColor: 'crimson', //Custom background button color
+    position: "right"    
+  });
+});
+</script>
+
 </html>
