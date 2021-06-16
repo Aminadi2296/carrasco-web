@@ -495,7 +495,9 @@ nav{
 
 .clients{
     background: var(--bg-gray);
-    padding-bottom: 20em;
+    padding-bottom: 6em;
+    padding-top: .5em;
+    /* background-color: red; */
 }
 .client-container{
     display: inline-block;
@@ -751,7 +753,7 @@ footer{
     /*CLIENTS SECTION */
 
     .clients{
-        padding-bottom: 15vh;
+        padding-bottom: 5vh;
     }
 
 
