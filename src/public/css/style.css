@@ -10,24 +10,11 @@ html{
     scroll-behavior: smooth;
 }
 
-/* .whatsapp {
-    position:fixed;
-    width:50px;
-    height:50px;
-    bottom:40px;
-    right:20px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    z-index:100;
-    opacity: 0;
-    transition: all 300ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .whatsapp {
+    overflow: hidden;
+    border-radius:50% !important;
   }
-  
+/*  
   .whatsapp-icon {
     width: 30px;
   } */
