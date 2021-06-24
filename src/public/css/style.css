@@ -806,6 +806,11 @@ footer{
     font-size: 2em;
 }
 
+
+.first-section{
+    background-position-x: center;
+}
+
 .first-section-container{
     width: 65%;
     padding-top: 45vh !important;
@@ -994,7 +999,7 @@ footer{
         height: 20em;
     }
 
-
+    
     .first-section-container{
         width: 100%;
         text-align: center;
