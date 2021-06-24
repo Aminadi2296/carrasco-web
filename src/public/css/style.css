@@ -103,6 +103,16 @@ html{
     /* border: 3px solid blue; */
 }
 
+.call-us a{
+    color: white;
+    text-decoration: none;
+    transition: all 160ms ;
+}
+
+.call-us a:hover{
+    color: rgba(255, 255, 255, 0.57);
+}
+
 .header-bg{
     background: rgba(0, 0, 0, 0.61);
     position: relative;
